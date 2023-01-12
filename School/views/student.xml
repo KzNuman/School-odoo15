@@ -5,12 +5,34 @@
             <field name="model">school.student</field>
             <field name="arch" type="xml">
                 <tree string="Student list">
+                    <field name="id"/>
                     <field name="name"/>
                     <field name="email"/>
                     <field name="phone"/>
                     <field name="gender"/>
                     <field name="birth_date"/>
                 </tree>
+            </field>
+        </record>
+        <record id="school_form_view" model="ir.ui.view">
+            <field name="name">school.form.view</field>
+            <field name="model">school.student</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <field name="id"/>
+                            <field name="name"/>
+                            <field name="email"/>
+                            <field name="phone"/>
+                        </group>
+
+                        <group>
+                            <field name="gender"/>
+                            <field name="birth_date"/>
+                        </group>
+                    </sheet>
+                </form>
             </field>
         </record>
 
