@@ -3,6 +3,7 @@ from odoo import api, fields, models, _
 class Student(models.Model):
     _name = 'school.student'
     _description = 'student'
+    id = fields.Char('Student Id')
     name = fields.Char('Student Name', reqired=True)
     email = fields.Char('Email')
     phone = fields.Char('Phone')
