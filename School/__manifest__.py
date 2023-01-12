@@ -39,6 +39,27 @@
     #always loaded
 
     'data': [
+        # security
+        "security/ir.model.access.csv",
+
+        #views
+        "views/student.xml",
+
+        #Teacher
+        "views/teacher.xml",
+
+        #Section
+        "views/section.xml",
+
+        #Course
+        "views/course.xml",
+
+        #Registration
+        "views/registration.xml",
+
+        #menu
+        "views/menu.xml",
+
 
     ],
 
